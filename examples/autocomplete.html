@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="cn_zh">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ajax</title>
+  <!-- <script src="https://listen80.github.io/myQuery/dist/myQuery.js"></script> -->
+  <script src="http://localhost:9003/dist/myQuery.js"></script>
+  <script src="../dist/myQuery.js"></script>
+</head>
+
+<body>
+  <input id="myInput" />
+  <script>
+    // 使用示例
+    console.log($)
+    $('#myInput').autocomplete({
+      source: ['Apple', 'Banana', 'Cherry', 'Date', 'Elderberry'],
+      minLength: 1,
+      select: function (event, ui) {
+        console.log('你选择了: ' + ui.item.value);
+      }
+    });
+  </script>
+
+</body>
+
+</html>
