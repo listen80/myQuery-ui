@@ -22,7 +22,9 @@ const plugins = [
     babelHelpers: "bundled", // 多次使用辅助函数只保留一个  比如 class 在转换成es5时会使用多个辅助函数则只保留一个
   }),
   scss({
-    output: 'dist/style.css',
+    fileName: 'myQueryUI.css',
+    sourceMap: true,
+    outputStyle: 'compressed'
   })
 ];
 
@@ -42,7 +44,7 @@ if (__DEV__) {
 export default {
   plugins,
   input: {
-    myQuery: "src/",
+    myQueryUI: "src/",
   },
   output: {
     dir: "dist/",

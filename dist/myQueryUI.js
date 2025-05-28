@@ -63,4 +63,4 @@
     return src;
 
 }));
-//# sourceMappingURL=myQuery.js.map
+//# sourceMappingURL=myQueryUI.js.map
