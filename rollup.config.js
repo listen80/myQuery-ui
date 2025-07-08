@@ -37,9 +37,9 @@ if (__DEV__) {
       historyApiFallback: '/README.md',
     })
   );
-} else {
-  plugins.push(terser());
 }
+plugins.push(terser());
+
 
 export default {
   plugins,
